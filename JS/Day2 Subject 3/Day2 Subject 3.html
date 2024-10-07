@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 표시</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        const name = prompt("이름을 입력하세요:");
+        const animal = prompt("좋아하는 동물을 입력하세요:");
+        const fruit = prompt("좋아하는 과일을 입력하세요:");
+
+        const output = document.getElementById('output');
+        output.innerHTML = `
+            <h1>${name}</h1>
+            <p>좋아하는 동물: ${animal}</p>
+            <p>좋아하는 과일: ${fruit}</p>
+        `;
+    </script>
+</body>
+</html>
